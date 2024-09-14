@@ -91,6 +91,10 @@ calcButton.addEventListener("click", () => {
 	} else {
 		// Otherwise we capture our 2nd input and perform our calculations
 		userInputTwo = parseFloat(displayContent);
+		if ((userInputOne == 0 || userInputTwo == 0) && userOperator == "/") {
+			alert("You may not divide 0 by any number, or divide any number by 0!");
+			return;
+		}
 		result = operate(userInputOne, userInputTwo, userOperator);
 		inputContent.textContent = result;
 		// Calculation is displayed and second input is cleared, first input set to result
