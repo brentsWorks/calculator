@@ -2,6 +2,7 @@
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
 	box-sizing: border-box;
 }
+
 body {
 	display: flex;
 	justify-content: center;
@@ -10,13 +11,16 @@ body {
 	margin: 0;
 	width: 100vw;
 	height: 100vh;
+	background-color:rgba(159, 9, 9, 0.635)
 }
 
 .frameContainer {
 	border: 1px solid black;
-	background-color: white;
+	background-color: black;;
 	width: 400px;
 	height: 600px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
 .calcContainer {
@@ -36,7 +40,8 @@ body {
 	background-color: rgb(58, 54, 54);
 	padding-right: 25px;
 	margin: 0;
-
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
 .calcGrid {
@@ -52,6 +57,7 @@ body {
 	color: white;
 	width: 100px;
 	height: 96px;
+	border-radius: 5px;
 }
 
 .buttonGrid.bottom {
