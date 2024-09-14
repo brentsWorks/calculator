@@ -60,6 +60,13 @@ body {
 	border-radius: 5px;
 }
 
+.buttonGrid:active {
+	-webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+	-moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+		 box-shadow: inset 0px 0px 5px #c1c1c1;
+	outline: none;
+	
+}
 .buttonGrid.bottom {
 	width: 100px;
 	height: 96px;
@@ -88,4 +95,9 @@ body {
 	padding-left: 20px;
 	text-align: right;
 	margin: 0;
+}
+
+#clearButton, #deleteButton, #moduloButton, #divideButton {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
 }
