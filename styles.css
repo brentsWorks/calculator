@@ -1,3 +1,7 @@
+* {
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	box-sizing: border-box;
+}
 body {
 	display: flex;
 	justify-content: center;
@@ -23,10 +27,16 @@ body {
 }
 
 .inputBox {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
 	width: 400px;
 	height: 120px;
 	color: white;
 	background-color: rgb(58, 54, 54);
+	padding-right: 25px;
+	margin: 0;
+
 }
 
 .calcGrid {
@@ -49,7 +59,7 @@ body {
 	height: 96px;
 }
 
-.buttonGrid.func {
+.buttonGrid.func, #moduloButton {
 	background-color: rgb(86, 81, 81);
 }
 
@@ -65,3 +75,11 @@ body {
 	width: 200px; 
 }
 
+.inputContent {
+	overflow-x: auto;
+	font-size: 80px;
+	width: 380px;
+	padding-left: 20px;
+	text-align: right;
+	margin: 0;
+}

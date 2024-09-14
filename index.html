@@ -13,13 +13,16 @@
 		<div calcContainer class="calcContainer">
 			
 			<div inputBox class="inputBox">
-
+				<p inputContent class="inputContent">
+					0
+				</p>
 			</div>
+
 			<div buttonGrid class="calcGrid">
 				<!-- 4x4 Grid with custom row of 3 appended to the bottom-->
-				<button class="buttonGrid func">AC</button>
-				<button class="buttonGrid func">DEL</button>
-				<button class="buttonGrid func">%</button>
+				<button class="buttonGrid func" id="clearButton">CLR</button>
+				<button class="buttonGrid func" id="deleteButton">DEL</button>
+				<button class="buttonGrid math" id="moduloButton">%</button>
 				<button class="buttonGrid math">&divide</button>
 
 				<button class="buttonGrid numPad">7</button>
@@ -37,7 +40,7 @@
 				<button class="buttonGrid numPad">3</button>
 				<button class="buttonGrid math">+</button>
 
-				<button class="buttonGrid bottom numPad" id ="zeroButton">0</button>
+				<button class="buttonGrid bottom numPad" id="zeroButton">0</button>
 				<button class="buttonGrid bottom numPad ">.</button>
 				<button class="buttonGrid bottom math">=</button>
 
